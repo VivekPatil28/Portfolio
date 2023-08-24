@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta id="theme" name="theme-color" content="#111">
+    <title>WebofVivek</title>
+</head>
+<style>
+    @font-face {
+    font-family: logo;
+    src: url(IDroid\ Bold\ Italic.otf);
+}
+
+@font-face {
+    font-family:mars;
+    src: url(Mars\ Bold.otf);
+}
+
+@font-face {
+    font-family:cross;
+    src: url(GladdenDemoRegular.ttf);
+}
+
+body {
+    background-image: linear-gradient(to bottom right,
+            #4affde9e 0%, #5b9dffbc 40%, #d06bffbe 60%, #ff34d3ba 100%);
+    background-size: 200% 200%;
+    animation: move 35s linear infinite alternate;
+    overflow-x: hidden;
+}
+
+@keyframes move {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 100%;
+    }
+}
+  #preloader {
+    background: rgba(196, 196, 196, 0.425) url(pl.gif) no-repeat center center;
+    background-size: 400px;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+    position: fixed;
+}
+.mars{
+    font-family: mars;
+}
+
+#logo {
+    padding: 5px 0;
+    letter-spacing: 4px;
+    color: white;
+    font-size: 40px;
+    font-family: logo;
+}
+</style>
+
+<body>
+    <div id="preloader"></div>
+
+    <!-- nav-bar -->
+    <nav class="navbar navbar-expand-sm navbar-white sticky-top" style="backdrop-filter: blur(10px);" aria-label="Third navbar example">
+        <div class="container">
+            <a class="navbar-brand fs-1 text-primary" id="logo" href="/">VP</a>
+            <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03"
+                    aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarsExample03">
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/projects.html">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/resume.html">Resume</a>
+                        </li>
+                    </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <style>
+        /* .projects span{
+            transition:all 1s ease;
+            transform: translateY(0px);
+        }
+        .projects span:hover{
+            transform: translateY(-50px);
+        } */
+
+        .project-card {
+            transition: transform .5s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: translateY(-50px);
+
+        }
+    </style>
+
+    <div class="container">
+        <div class="row" style="height: 100vh;">
+            <div class="col d-flex justify-content-center align-items-start flex-column">
+                <h1 class="projects">
+                    <span class="mars d-inline-block" data-aos-delay="500" data-aos-duration="2000"
+                        data-aos="zoom-in">P</span>
+                    <span class="mars d-inline-block" data-aos-delay="1000" data-aos-duration="2000"
+                        data-aos="fade-up-right">r</span>
+                    <span class="mars d-inline-block" data-aos-delay="1000" data-aos-duration="2000"
+                        data-aos="fade-down-left">o</span>
+                    <span class="mars d-inline-block" data-aos-delay="1000" data-aos-duration="2000"
+                        data-aos="fade-up-right">j</span>
+                    <span class="mars d-inline-block" data-aos-delay="1000" data-aos-duration="2000"
+                        data-aos="fade-down-left">e</span>
+                    <span class="mars d-inline-block" data-aos-delay="1000" data-aos-duration="2000"
+                        data-aos="fade-up-right">c</span>
+                    <span class="mars d-inline-block" data-aos-delay="1000" data-aos-duration="2000"
+                        data-aos="fade-down-left">t</span>
+                    <span class="mars d-inline-block" data-aos-delay="1000" data-aos-duration="2000"
+                        data-aos="fade-up-right">s</span>
+                </h1>
+                <p class="ms-3">
+                    <span class="d-inline-block" data-aos-delay="5000" data-aos-duration="1000" data-aos="fade-left">Code</span>
+                    <span class="d-inline-block" data-aos-delay="2000" data-aos-duration="1000" data-aos="fade-left">, Create</span>
+                    <span class="d-inline-block" data-aos-delay="3000" data-aos-duration="1000" data-aos="fade-left">, Innovate</span>
+                </p>
+            </div>
+            <div class="col d-flex justify-content-center align-items-center flex-column">
+                <img class="img-fluid" style="max-height: 400px;"  data-aos="fade-up-left" data-aos-delay="1000" src="proj.png">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container my-5">
+        <div class="container my-5">
+            <h1 data-aos="fade-up-right" class="text-center text-dark mars">Recent Works </h1>
+            <p data-aos="fade-up-left" data-aos-delay="500" class="text-center text-muted">Here are a few projects I've
+                worked on recently.</p>
+        </div>
+
+
+        <div class=" mt-5 row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 g-0 g-sm-5">
+
+            <div class="col" data-aos="zoom-out-right" data-aos-delay="1000">
+                <div class="project-card card shadow py-3 px-2 bg-transparent bg-gradient">
+                    <img class="bd-placeholder-img card-img-top" src="static/projects/syllabusManager.png" width="100%"
+                        height="225" alt="proj image">
+                    <div class="card-body mt-2">
+                        <h5 class="">Syllabus Manager</h5>
+                        <h6 style="min-height: 40px;">Django | Sqlite3</h6>
+                        <p class="card-text text-muted">This is a wider card with supporting text below as a natural
+                            lead-in to additional
+                            content. This content is a little bit longer.</p>
+                        <div class="gap-2 d-flex justify-content-center align-items-center">
+                            <a href="#" class="btn btn-primary " type="button">
+                                <i class="fa-brands fa-github mx-2"></i>Github
+                            </a>
+                            <a href="https://vivekpatil28.pythonanywhere.com/" class="btn btn-primary" type="button">
+                                <i class="fa-solid fa-laptop-code mx-2"></i>Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col " data-aos="zoom-in" data-aos-delay="1000">
+                <div class="card project-card shadow py-3 px-2 bg-transparent bg-gradient">
+                    <img class="bd-placeholder-img card-img-top" src="static/projects/mbcart.png" width="100%"
+                        height="225" alt="">
+                    <div class="card-body mt-2">
+                        <h5>MBCART</h5>
+                        <h6 style="min-height: 40px;">Django | Sqlite3 | Razorpay | HTML | CSS | JS | Bootstrap | jQuery
+                        </h6>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="gap-2 d-flex justify-content-center align-items-center">
+                            <a href="https://github.com/VivekPatil28/MBCART" class="btn btn-primary " type="button">
+                                <i class="fa-brands fa-github mx-2"></i>Github
+                            </a>
+                            <a href="https://mbcart.pythonanywhere.com/" class="btn btn-primary" type="button">
+                                <i class="fa-solid fa-laptop-code mx-2"></i>Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col" data-aos="zoom-out-left" data-aos-delay="1000">
+                <div class="card project-card shadow py-3 px-2 bg-transparent bg-gradient">
+                    <img class="bd-placeholder-img card-img-top" src="static/projects/spendratantata.png" width="100%"
+                        height="225" alt="">
+                    <div class="card-body mt-2">
+                        <h5>Spend Ratan Tata's Fortune</h5>
+                        <h6 style="min-height: 40px;">HTML | CSS | JS | Bootstrap</h6>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="gap-2 d-flex justify-content-center align-items-center">
+                            <a href="https://github.com/VivekPatil28/SpendRatanTatasfortune" class="btn btn-primary "
+                                type="button">
+                                <i class="fa-brands fa-github mx-2"></i>Github
+                            </a>
+                            <a href="https://vivekpatil28.github.io/SpendRatanTatasfortune/" class="btn btn-primary"
+                                type="button">
+                                <i class="fa-solid fa-laptop-code mx-2"></i>Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col" data-aos="zoom-out-right">
+                <div class="card project-card shadow py-3 px-2 bg-transparent bg-gradient">
+                    <img class="bd-placeholder-img card-img-top" src="static/projects/tictactoe.png" width="100%"
+                        height="225" alt="">
+                    <div class="card-body mt-2">
+                        <h5>Tic Tac Toe</h5>
+                        <h6 style="min-height: 40px;">HTML | CSS | JS | Bootstrap</h6>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="gap-2 d-flex justify-content-center align-items-center">
+                            <a href="https://github.com/VivekPatil28/Tic-Tac-Toe" class="btn btn-primary "
+                                type="button">
+                                <i class="fa-brands fa-github mx-2"></i>Github
+                            </a>
+                            <a href="https://vivekpatil28.github.io/Tic-Tac-Toe/" class="btn btn-primary" type="button">
+                                <i class="fa-solid fa-laptop-code mx-2"></i>Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col" data-aos="zoom-in">
+                <div class="card  project-card shadow py-3 px-2 bg-transparent bg-gradient">
+                    <img class="bd-placeholder-img card-img-top" src="static/projects/bankmanagementsystem.png"
+                        width="100%" height="225" alt="">
+                    <div class="card-body mt-2">
+                        <h5>Bank Management System GUI</h5>
+                        <h6 style="min-height: 40px;">Python | Tkinter</h6>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="gap-2 d-flex justify-content-center align-items-center">
+                            <a href="https://github.com/VivekPatil28/Bank-Management-System-GUI-interface"
+                                class="btn btn-primary " type="button">
+                                <i class="fa-brands fa-github mx-2"></i>Github
+                            </a>
+                            <a href="#" class="btn btn-primary" type="button">
+                                <i class="fa-solid fa-laptop-code mx-2"></i>Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col" data-aos="zoom-out-left">
+                <div class="card project-card shadow py-3 px-2 bg-transparent bg-gradient">
+                    <img class="bd-placeholder-img card-img-top" src="static/projects/atd.png" width="100%" height="225"
+                        alt="">
+                    <div class="card-body mt-2">
+                        <h5>Analog Clock Animation </h5>
+                        <h6 style="min-height: 40px;">HTML | CSS | Javascript</h6>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="gap-2 d-flex justify-content-center align-items-center">
+                            <a href="https://github.com/VivekPatil28/ATDClock" class="btn btn-primary " type="button">
+                                <i class="fa-brands fa-github mx-2"></i>Github
+                            </a>
+                            <a href="https://vivekpatil28.github.io/ATDClock/" class="btn btn-primary" type="button">
+                                <i class="fa-solid fa-laptop-code mx-2"></i>Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" data-aos="zoom-out-right">
+                <div class="card project-card shadow py-3 px-2 bg-transparent bg-gradient">
+                    <img class="bd-placeholder-img card-img-top" src="static/projects/atd.png" width="100%" height="225"
+                        alt="">
+                    <div class="card-body mt-2">
+                        <h5>Envento </h5>
+                        <h6 style="min-height: 40px;">Django | Sqlite3 | HTML | CSS </h6>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional
+                            content. This content is a little bit longer.</p>
+                        <div class="gap-2 d-flex justify-content-center align-items-center">
+                            <a href="https://github.com/VivekPatil28/Envento" class="btn btn-primary " type="button">
+                                <i class="fa-brands fa-github mx-2"></i>Github
+                            </a>
+                            <a href="#" class="btn btn-primary" type="button">
+                                <i class="fa-solid fa-laptop-code mx-2"></i>Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img src="svg2.svg" alt="">
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">Created By &copy; Vivek Patil</span>
+            </div>
+    
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a  class="fa-brands fa-square-instagram fa-2xl text-body-secondary" href="https://www.instagram.com/its_vivek_patil_vm/"></a></li>
+                <li class="ms-3"><a  class="fa-brands fa-github fa-2xl text-body-secondary text-decoration-none" href="https://github.com/VivekPatil28"></a></li>
+                <li class="ms-3"><a class="text-body-secondary fa-brands fa-linkedin fa-2xl" href="https://www.linkedin.com/in/vivekpatil28/"></a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ mirror: true, });
+</script>
+
+<script>
+   
+
+    // var loader =document.getElementById("preloader");
+    window.addEventListener("load", function () {
+        document.getElementById("preloader").style.display = "none";
+    });
+
+
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+
+</html>

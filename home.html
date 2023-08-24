@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <meta id="theme" name="theme-color" content="#111">
+    <title>WebofVivek</title>
+</head>
+<style>
+    @font-face {
+    font-family: logo;
+    src: url(IDroid\ Bold\ Italic.otf);
+}
+
+@font-face {
+    font-family:mars;
+    src: url(Mars\ Bold.otf);
+}
+
+@font-face {
+    font-family:cross;
+    src: url(GladdenDemoRegular.ttf);
+}
+
+body {
+    background-image: linear-gradient(to bottom right,
+            #4affde9e 0%, #5b9dffbc 40%, #d06bffbe 60%, #ff34d3ba 100%);
+    background-size: 200% 200%;
+    animation: move 35s linear infinite alternate;
+    overflow-x: hidden;
+}
+
+@keyframes move {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 100%;
+    }
+}
+  #preloader {
+    background: rgba(196, 196, 196, 0.425) url(pl.gif) no-repeat center center;
+    background-size: 400px;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+    position: fixed;
+}
+.mars{
+    font-family: mars;
+}
+
+#logo {
+    padding: 5px 0;
+    letter-spacing: 4px;
+    color: white;
+    font-size: 40px;
+    font-family: logo;
+}
+</style>
+
+<body>
+    <div id="preloader"></div>
+
+    <!-- nav-bar -->
+    <nav class="navbar navbar-expand-sm navbar-white sticky-top" style="backdrop-filter: blur(10px);"
+        aria-label="Third navbar example">
+        <div class="container">
+            <a class="navbar-brand fs-1 text-primary" id="logo" href="/">VP</a>
+            <div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample03">
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/About.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/projects.html">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/resume.html">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container d-flex align-items-center justify-content-evenly" style="height: 70vh;" >
+        <div class="row">
+            <div class="col-12 col-sm-6">
+                <img class="img-fluid" style="border:6px solid tomato;border-radius: 50%;max-height: 300px;"  data-aos="zoom-in" data-aos-offset="0" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                    data-aos-mirror="true" data-aos-once="false" data-aos-anchor-placement="top-center"  src="myimg2.png" alt="">
+            </div>
+            <div class="col-12 col-sm-6 d-flex justify-content-center align-items-center flex-column" data-aos="zoom-in" data-aos-offset="100" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                data-aos-mirror="true" data-aos-once="false" id="about-me">
+                <h1>Hi, I'm <span id="ncolor">Vivek</span></h1>
+                <h6>Frontend Developer & UI Designer</h6>
+                <p>Welcome to my web <></p> 
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">Created By &copy; Vivek Patil</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="fa-brands fa-square-instagram fa-2xl text-body-secondary"
+                        href="https://www.instagram.com/its_vivek_patil_vm/"></a></li>
+                <li class="ms-3"><a class="fa-brands fa-github fa-2xl text-body-secondary text-decoration-none"
+                        href="https://github.com/VivekPatil28"></a></li>
+                <li class="ms-3"><a class="text-body-secondary fa-brands fa-linkedin fa-2xl"
+                        href="https://www.linkedin.com/in/vivekpatil28/"></a></li>
+            </ul>
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ mirror: true, });
+</script>
+
+<script>
+
+
+    // var loader =document.getElementById("preloader");
+    window.addEventListener("load", function () {
+        document.getElementById("preloader").style.display = "none";
+    });
+
+
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</html>
