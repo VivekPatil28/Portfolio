@@ -76,34 +76,28 @@
     <div id="preloader"></div>
 
     <!-- nav-bar -->
-    <nav class="navbar navbar-expand-sm navbar-white sticky-top" style="backdrop-filter: blur(10px);"
-        aria-label="Third navbar example">
-        <div class="container">
-            <a class="navbar-brand fs-1 text-primary" id="logo" href="/">VP</a>
-            <div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarsExample03">
-                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="About.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="projects.html">Project</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="resume.html">Resume</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <nav class="navbar navbar-expand-md navbar-white sticky-top container mx-2" aria-label="nav"
+        style="backdrop-filter: blur(10px);">
+        <a class="navbar-brand fs-1 text-primary" id="logo" href="/Portfolio">VP</a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04"
+            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse ms-3" id="navbarsExample04">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="projects.html">Project</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="resume.html">Resume</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -345,7 +339,6 @@
 
 
 </body>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
 
     // var loader =document.getElementById("preloader");
@@ -357,9 +350,5 @@
 
 </script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    AOS.init();
-</script>
-
 
 </html>
